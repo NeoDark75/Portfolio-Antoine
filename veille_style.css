@@ -23,7 +23,7 @@ body{
   }
 
   .container {
-    flex: 0 1 700px;
+    flex: 0 1 850px;
     margin: auto;
     padding: 10px;
   }
@@ -100,113 +100,7 @@ body{
   }
   
   /* Centrer le contenu dans l'onglet */
-  .fenetre-body {
-    display: flex;
-  }
-  
-  .fenetre-body-item {
-    flex: 1;
-    padding: 50px;
-  }
-  
-  .fenetre-body-item.gauche {
-    display: flex;
-    flex-direction: column;
-  }
-  /* Style du texte CONCTACTEZ MOI */
-  .texte_gauche {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    color: #ffffff;
-    font-size: 29px;
-    align-items: center;
-  }
-  
-  .texte_gauche:after {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 0;
-    bottom: -7px;
-    width: 55px;
-    height: 4px;
-    background: #ffffff;
-  }
 
-  /*  */
-  .champs-form-groupe {
-    margin-bottom: 15px;
-
-  }
-  
-  .champs-form-groupe.message {
-    margin-top: 20px;
-  }
-  
-  .champs-form-groupe.saisie {
-    margin-bottom: 0;
-    text-align: right;
-  }
-  
-  .champs-form-saisie {
-    width: 100%;
-    padding: 10px 0;
-    background: none;
-    border: none;
-    border-bottom: 1px solid #666;
-    color: #ddd;
-    font-size: 14px;
-    text-transform: uppercase;
-    outline: none;
-    transition: border-color .2s;
-  }
-  /* couleur du text prédefinie */
-  .champs-form-saisie::placeholder {
-    color: #666;
-  }
-  /* couleur lorsque le champs est cliqué */
-  .champs-form-saisie:focus {
-    border-bottom-color: #ddd;
-  }
-
-  /* Style des 2 bouton en bas du formulaire a droite */
-  .champs-form-button {
-    background: none;
-    border: none;
-    color: #ea1d6f;
-    font-size: 14px;
-    cursor: pointer;
-    outline: none;
-  }
-  
-  .champs-form-button:hover {
-    color: #b9134f;
-  }
-  
-  
-  /* Partie Responsive */
-  @media screen and (max-width: 520px) {
-    .fenetre-body {
-      flex-direction: column;
-    }
-  
-    .fenetre-body-item.gauche {
-      margin-bottom: 30px;
-    }
-  
-    .texte_gauche {
-      flex-direction: row;
-    }
-  
-    .texte_gauche span {
-      margin-right: 12px;
-    }
-  
-    .texte_gauche:after {
-      display: none;
-    }
-  }
   
   @media screen and (max-width: 600px) {
     .fenetre-body {
@@ -218,18 +112,3 @@ body{
     }
   }
   
-
-  .containerlk{
-    display: flex;
-    flex-direction: row;
-    padding: 45px;
-    Position:absolute;
-    left:-35px;
-    bottom:-35px;
-  }
-
-
-.imgcliquable{
-  width : 65px;
-  height : 65px;
-}

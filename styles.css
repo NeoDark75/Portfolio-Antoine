@@ -101,6 +101,7 @@
   ul li a:hover,
   ul li a i {
     color: #fff;
+    text-decoration: none;
   }
 
   .nav_is_open{
