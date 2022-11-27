@@ -1,0 +1,78 @@
+body {
+  color: #e0ddcf;
+  position: relative;
+}
+
+/* Poste fixe */
+@media only screen and (min-width: 992px) {
+  /* Texte titre */
+  h1 {
+    font-size: 4em;
+    font-weight: 200;
+    margin: 0.4rem;
+  }
+
+  /* Cursor */
+  .txt-type > .txt {
+    border-right: 0.2rem solid #e0ddcf;
+  }
+  .sub {
+    font-size: 2em;
+    color: #f1f0ea;
+    position: absolute;
+    bottom: 2%;
+    font-family: "COCOGOOSE", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+}
+
+/* Tablette */
+@media only screen and (max-width: 991px) {
+  /* Texte titre */
+
+  h1,
+  h2 {
+    font-weight: 200;
+    margin: 0.4rem;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    color: #f1f0ea;
+  }
+
+  /* Cursor */
+  .txt-type > .txt {
+    border-right: 0.2rem solid #e0ddcf;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Texte titre */
+
+  h1,
+  h2 {
+    font-weight: 200;
+    margin: 0.4rem;
+  }
+
+  h1 {
+    font-size: 0.5em;
+  }
+
+  h2 {
+    font-size: 0.5em;
+    color: #f1f0ea;
+  }
+
+  /* Cursor */
+  .txt-type > .txt {
+    border-right: 0.2rem solid #e0ddcf;
+  }
+}

@@ -1,0 +1,66 @@
+/* Poste fixe */
+@media only screen and (min-width: 992px) {
+  .outline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+    border: 3px solid #474448;
+    border-radius: 1em;
+    padding: 2em;
+  }
+  .card {
+    width: 500px;
+    height: 500px;
+    background-color: #474448;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    position: relative;
+  }
+
+  .projectlink:hover {
+    transform: scale(1.075);
+  }
+
+  .topcard {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #474448;
+    border: 2px solid #474448;
+  }
+
+  .line {
+    margin: 15px;
+    padding: 0px;
+    border-top: 1px solid #e0ddcf;
+  }
+
+  .titlecard {
+    color: #e0ddcf;
+    text-align: center;
+    font-size: 1.75em;
+  }
+
+  .textcard {
+    color: #f1f0ea;
+    text-align: left;
+    font-family: "COCOGOOSE", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .projectlink {
+    text-decoration: none;
+    background-color: #e0ddcf;
+    border-radius: 0.5em;
+    font-family: "Akira Expanded", sans-serif;
+    position: absolute;
+    bottom: 2%;
+    color: #534b52;
+  }
+}
