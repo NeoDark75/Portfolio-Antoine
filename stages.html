@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre Page -->
+    <title>Stages</title>
+    <!-- FavIcon De Page -->
+    <link rel="icon" type="image/x-icon" href="/img/logosite.png">
+    <!-- Déclaration des fichiers CSS (style) / Bibliothèque -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/stages_style.css" />
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/aria-tablist/dist/aria-tablist.min.js"></script>
+  </head>
+  <body>
+    <!-- Menu -->
+    <nav class="full-screen-nav">
+      <!-- Contenu du menu -->
+      <div class="backdrop"></div>
+      <ul>
+        <!-- Button pour Accueil -->
+        <li>
+          <a href="index.html" id="slide"
+            ><i class="bx bx-menu" id="icon"></i> Accueil</a
+          >
+        </li>
+        <!-- Button pour Portfolio -->
+        <li>
+          <a href="competences.html" id="slide"
+            ><i class="bx bxs-book" id="icon"></i> Compétences</a
+          >
+        </li>
+        <!-- Button pour Veille -->
+        <li>
+          <a href="waiting.html" id="slide"
+            ><i class="bx bx-archive" id="icon"></i> Veille</a
+          >
+        </li>
+        <!-- Button pour Stages -->
+        <li>
+          <a href="stages.html" id="slide"
+            ><i class="bx bx-user" id="icon"></i> Stages</a
+          >
+        </li>
+        <!-- Button pour Contact -->
+        <li>
+          <a href="contact.html" id="slide"
+            ><i class="bx bx-phone" id="icon"></i> Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- Bouton pour ouvrir le menu -->
+    <div class="bouton_menu">
+      <button class="trigger"><i class="bx bx-menu"></i></button>
+    </div>
+    <!-- Contenu de la page -->
+    <div class="container">
+      <!-- Contact -->
+      <fieldset>
+        <legend>MES STAGES</legend>
+        <div class="card">
+          <div class="tabs">
+            <div role="tablist" aria-label="Stages" class="tablist">
+              <button
+                role="tab"
+                aria-selected="true"
+                aria-controls="panel-1"
+                id="tab-1"
+                tabindex="0">
+                BTS SIO
+              </button>
+              <button
+                role="tab"
+                aria-selected="false"
+                aria-controls="panel-2"
+                id="tab-2"
+                tabindex="-1">
+                Elsan
+              </button>
+            </div>
+            <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" class="etude">
+              <h2>BTS <span id="etude">- <a href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers" target="_blank" id="etude"> Services Informatiques aux Organisations</a></span></h2>
+              <p>2021-2023</p>
+              <ul class="desc">
+                <li class="info">Suivi de la formation BTS SIO</li>
+                <li class="info">Cours de Développement OPTION SLAM</li>
+                <li class="info">Cours de CyberSécurité</li>
+              </ul>
+            </div>
+            <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" class="stage1" hidden>
+              <h2>Cybersécurité <span id="stage1">- <a href="https://www.elsan.care/fr" target="_blank" id="stage1">ELSAN</a></span></h2>
+              <p>Mai/Juin - 2021</p>
+              <ul class="desc">
+                <li class="info">Stage de 1ère année de BTS SIO</li>
+                <li class="info">Surveillance de mails malveillants</li>
+                <li class="info">Campagne de sensibilisation des employés</li>
+                <li class="info">Maîtrise d'outils de ticketings/suivi</li>
+              </ul>
+            </div>
+            <!-- <div id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" class="test" hidden>
+              <p>Something</p>
+            </div> -->
+          </div>
+          <!-- <div class="dispo_stages">
+            <h5>Disponible : <div class="greencircle"></div></h5>
+          </div> -->
+        </div>
+      </fieldset>
+    </div>
+    <!-- Copyright -->
+    <div class="sub">
+      <i class='bx bx-copyright' id="logo"></i>Réalisé par Antoine SILLARD
+    </div>
+    <!-- Script pour le menu afin de ne plus voir le contenu quand on l'ouvre -->
+    <script src="script_portfolio.js"></script>
+  </body>
+</html>

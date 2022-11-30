@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre Page -->
     <title>Portfolio</title>
+    <!-- FavIcon De Page -->
+    <link rel="icon" type="image/x-icon" href="/img/logosite.png" />
+    <!-- Déclaration des fichiers CSS (style) / Bibliothèque -->
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/competences_style.css" />
     <link
@@ -13,28 +17,40 @@
     />
   </head>
   <body>
+    <!-- Menu -->
     <nav class="full-screen-nav">
+      <!-- Contenu du menu -->
       <div class="backdrop"></div>
       <ul>
-        <!-- Boutton pour Accueil -->
+        <!-- Button pour Accueil -->
         <li>
-          <a href="index.html"><i class="bx bx-menu"></i> Accueil</a>
+          <a href="index.html" id="slide"
+            ><i class="bx bx-menu" id="icon"></i> Accueil</a
+          >
         </li>
-        <!-- Boutton pour Portfolio -->
+        <!-- Button pour Portfolio -->
         <li>
-          <a href="competences.html"><i class="bx bxs-book"></i> Compétences</a>
+          <a href="competences.html" id="slide"
+            ><i class="bx bxs-book" id="icon"></i> Compétences</a
+          >
         </li>
-        <!-- Boutton pour Veille -->
+        <!-- Button pour Veille -->
         <li>
-          <a href="waiting.html"><i class="bx bx-archive"></i> Veille</a>
+          <a href="waiting.html" id="slide"
+            ><i class="bx bx-archive" id="icon"></i> Veille</a
+          >
         </li>
-        <!-- Boutton pour Stages -->
+        <!-- Button pour Stages -->
         <li>
-          <a href="waiting.html"><i class="bx bx-user"></i> Stages</a>
+          <a href="stages.html" id="slide"
+            ><i class="bx bx-user" id="icon"></i> Stages</a
+          >
         </li>
-        <!-- Boutton pour Contact -->
+        <!-- Button pour Contact -->
         <li>
-          <a href="waiting.html"><i class="bx bx-phone"></i> Contact</a>
+          <a href="contact.html" id="slide"
+            ><i class="bx bx-phone" id="icon"></i> Contact</a
+          >
         </li>
       </ul>
     </nav>
@@ -42,49 +58,72 @@
     <div class="bouton_menu">
       <button class="trigger"><i class="bx bx-menu"></i></button>
     </div>
+    <!-- Contenu de la page -->
     <div class="container">
-      <!-- PROJET PERSO -->
-      <div class="projetperso">
-        <div class="outline">
-          <div class="card">
-            <img src="img/imc.png" alt="Représentation IMC" class="topcard" />
-            <h5 class="titlecard">Calculateur d'IMC</h5>
+      <!-- Projet personnel -->
+      <!-- Contour avec la légende pour expliquer le contenu -->
+      <fieldset>
+        <legend>Projet Personnel</legend>
+        <!-- Carte premier Projet -->
+        <div class="card">
+          <!-- Image Haut de la carte -->
+          <img src="img/imc.png" alt="Représentation IMC" class="topcard" />
+          <!-- Titre Carte Projet -->
+          <h5 class="titlecard">Calculateur d'IMC</h5>
+          <!-- Line de séparation stylistique -->
+          <hr class="line" />
+          <!-- Description du Projet -->
+          <p class="textcard">
+            Création d'un calculateur de l'Indice de Masse Corporel en php grâce
+            à un formulaire.
+          </p>
+          <!-- Lien en rapport avec le projet -->
+          <div class="projectlink">
+          <a
+            href="https://github.com/NeoDark75/ProjectIMC"
+            id="slide"
+            target="_blank"
+            ><i class="bx bx-info-circle" id="logo"></i>Informations</a
+          >
+        </div>
+        </div>
+        <!-- Carte deuxième Projet -->
+        <div class="card">
+          <!-- Image Haut de la carte -->
+          <img
+            class="topcard"
+            src="img/gtaserv.jpg"
+            alt="Représentation du Jeu"
+          />
+          <div class="card-body">
+            <!-- Titre Carte Projet -->
+            <h5 class="titlecard">Serveur RolePlay</h5>
+            <!-- Line de séparation stylistique -->
             <hr class="line" />
+            <!-- Description du Projet -->
             <p class="textcard">
-              Création d'un calculateur de l'Indice de Masse Corporel en php
-              grâce à un formulaire.
+              Création d'un serveur RolePlay sur le jeu <br>Grand Theft Auto V en
+              LUA.
             </p>
+            <!-- Lien en rapport avec le projet --> 
+            <div class="projectlink">
             <a
-              href="https://github.com/NeoDark75/ProjectIMC"
-              class="projectlink"
+              href="https://top-serveurs.net/gta/frqcbe-imalia-rp-fa-serious-rp-double-job-scripts-exclusifs-cayo-perico"
+              
+              id="slide"
               target="_blank"
-              ><i class="bx bx-info-circle"></i>Informations</a
+              ><i class="bx bx-info-circle" id="logo"></i>Informations</a
             >
-          </div>
-          <div class="card">
-            <img
-              class="topcard"
-              src="img/gtaserv.jpg"
-              alt="Représentation du Jeu"
-            />
-            <div class="card-body">
-              <h5 class="titlecard">Serveur RolePlay</h5>
-              <hr class="line" />
-              <p class="textcard">
-                Création d'un serveur RolePlay sur le jeu Grand Theft Auto V en
-                LUA.
-              </p>
-              <a
-                href="https://top-serveurs.net/gta/frqcbe-imalia-rp-fa-serious-rp-double-job-scripts-exclusifs-cayo-perico"
-                class="projectlink"
-                target="_blank"
-                ><i class="bx bx-info-circle"></i>Informations</a
-              >
             </div>
           </div>
         </div>
-      </div>
+      </fieldset>
     </div>
+    <!-- Copyright -->
+    <div class="sub">
+      <i class="bx bx-copyright" id="logo"></i>Réalisé par Antoine SILLARD
+    </div>
+    <!-- Script pour le menu afin de ne plus voir le contenu quand on l'ouvre -->
     <script src="script_portfolio.js"></script>
   </body>
 </html>

@@ -3,39 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre Page -->
+    <title>Accueil</title>
+    <!-- FavIcon De Page -->
+    <link rel="icon" type="image/x-icon" href="/img/logosite.png">
+    <!-- Déclaration des fichiers CSS (style) / Bibliothèque -->
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/index_style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accueil</title>
+    <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet"/>
   </head>
   <body>
+    <!-- Menu -->
     <nav class="full-screen-nav">
+      <!-- Contenu du menu -->
       <div class="backdrop"></div>
       <ul>
-        <!-- Boutton pour Accueil -->
+        <!-- Button pour Accueil -->
         <li>
-          <a href="index.html"><i class="bx bx-menu"></i> Accueil</a>
+          <a href="index.html" id="slide"
+            ><i class="bx bx-menu" id="icon"></i> Accueil</a
+          >
         </li>
-        <!-- Boutton pour Compétences -->
+        <!-- Button pour Portfolio -->
         <li>
-          <a href="competences.html"><i class="bx bxs-book"></i> Compétences</a>
+          <a href="competences.html" id="slide"
+            ><i class="bx bxs-book" id="icon"></i> Compétences</a
+          >
         </li>
-        <!-- Boutton pour Veille -->
+        <!-- Button pour Veille -->
         <li>
-          <a href="waiting.html"><i class="bx bx-archive"></i> Veille</a>
+          <a href="waiting.html" id="slide"
+            ><i class="bx bx-archive" id="icon"></i> Veille</a
+          >
         </li>
-        <!-- Boutton pour Stages -->
+        <!-- Button pour Stages -->
         <li>
-          <a href="waiting.html"><i class="bx bx-user"></i> Stages</a>
+          <a href="stages.html" id="slide"
+            ><i class="bx bx-user" id="icon"></i> Stages</a
+          >
         </li>
-        <!-- Boutton pour Contact -->
+        <!-- Button pour Contact -->
         <li>
-          <a href="waiting.html"><i class="bx bx-phone"></i> Contact</a>
+          <a href="contact.html" id="slide"
+            ><i class="bx bx-phone" id="icon"></i> Contact</a
+          >
         </li>
       </ul>
     </nav>
@@ -43,8 +55,9 @@
     <div class="bouton_menu">
       <button class="trigger"><i class="bx bx-menu"></i></button>
     </div>
-    <!-- Container cacher pendant l'activation du menu -->
+    <!-- Contenu de la page -->
     <div class="container">
+      <!-- Titre de la page animé via CSS -->
         <h1>
           Bienvenue sur mon
           <span
@@ -55,9 +68,11 @@
         </h1>
       </div>
     </div>
+    <!-- Copyright -->
     <div class="sub">
-      Réalisé par Antoine SILLARD
+      <i class='bx bx-copyright' id="logo"></i>Réalisé par Antoine SILLARD
     </div>
+    <!-- Script pour le menu afin de ne plus voir le contenu quand on l'ouvre -->
     <script src="script_portfolio.js"></script>
   </body>
 </html>

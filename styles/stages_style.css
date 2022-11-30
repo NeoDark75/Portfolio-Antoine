@@ -1,0 +1,135 @@
+/* Poste fixe */
+@media only screen and (min-width: 992px) {
+  fieldset {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2em;
+    border: 3px solid #474448;
+    border-radius: 1em;
+    padding: 2em;
+    color: #e0ddcf;
+    font-size: 1.25em;
+  }
+  .card {
+    font-family: 'SF Pro Display', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 750px;
+    height: 500px;
+    background-color: #474448;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    position: relative;
+  }
+
+  .projectlink:hover {
+    transform: scale(1.075);
+  }
+
+  .tablist {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 730px;
+    object-fit: cover;
+  }
+
+  button {
+    background-color: #474448;
+    transition-duration: 0.4s;
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    color:#e0ddcf;
+    border: none;
+    border-bottom: 4px solid #2d232e;
+  }
+  button:hover {
+    color: #F1F0EA;
+    background-color: #6f6970;
+    border-bottom: 4px solid #5a465c;;
+  }
+  button[aria-selected="true"]{
+    background-color: #6f6970;
+    color: #F1F0EA;
+    border-bottom: 4px solid #5a465c;;
+  }
+  h2{
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: bold;
+    color: #F1F0EA;
+  }
+  #etude{
+    position: relative;
+    color: #F1F0EA;
+  }
+  a[id=etude]{
+    text-decoration: none;
+    color: #F1F0EA;
+  }
+  
+  #etude:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #F1F0EA;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  #etude:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+  #stage1{
+    position: relative;
+    color: #ffae00;
+  }
+  a[id=stage1]{
+    text-decoration: none;
+    color: #ffae00;
+  }
+  a:hover{
+    text-decoration: none;
+  }
+  
+  #stage1:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffae00;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  #stage1:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+
+
+  p{
+    color: #E0DDCF;
+  }
+  .desc{
+    color: #F1F0EA;
+    margin: 0;
+    padding: 0;
+  }
+  .info::before{
+    content:"▹";
+  }
+}

@@ -12,7 +12,8 @@
     font-size: 1.25em;
   }
   .card {
-    width: 500px;
+    text-align: center;
+    width: 750px;
     height: 500px;
     background-color: #474448;
     border-radius: 1em;
@@ -20,13 +21,13 @@
     position: relative;
   }
 
+  .projectlink:hover {
+    transform: scale(1.075);
+  }
+
   .topcard {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: #474448;
     border: 2px solid #474448;
@@ -41,23 +42,38 @@
   .titlecard {
     color: #e0ddcf;
     text-align: center;
-    font-size: 1.5em;
+    font-size: 2em;
   }
 
   .textcard {
     color: #f1f0ea;
     text-align: left;
-    font-family: 'SF Pro Display', sans-serif;
+    font-family: 'SF Pro Display', sans-serif;              
     font-size: 20px;
     font-weight: bold;
   }
 
   .projectlink {
+    text-decoration: none;
+    background-color: #e0ddcf;
+    border-radius: 0.5em;
     font-family: "Akira Expanded", sans-serif;
     position: absolute;
-    bottom: 4px;
+    bottom: 2%;
+    color: #534b52;
   }
   a{
-    text-decoration: none;
+    text-decoration: none;  
+  }
+  
+  .link {
+    display: inline-block;
+  }
+  
+  .topcard:hover {
+    transform: scale(1.075);
+    background-color: #e0ddcf;
+    border: 2px solid #e0ddcf;
   }
 }
+

@@ -1,113 +1,104 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Titre Page -->
+    <title>Contact</title>
+    <!-- FavIcon De Page -->
+    <link rel="icon" type="image/x-icon" href="/img/logosite.png" />
+    <!-- Déclaration des fichiers CSS (style) / Bibliothèque -->
+    <link rel="stylesheet" href="styles/contact_style.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact</title>
-  <!-- Lien pour le style -->
-  <link rel="stylesheet" href="contact_style.css" />
-  <link rel="stylesheet" href="styles.css"/>
-  <!-- Lien pour les icônes -->
-  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
-  
-</head>
-
-<body>
-  <div class="background">
-    <!-- Tous le contenu du menu -->
-    <nav class="full-screen-nav">
-      <div class="backdrop"></div>
-      <ul>
-        <!-- Boutton pour Accueil -->
-        <li>
-          <a href="index.html"><i class='bx bx-menu'></i> Accueil</a>
-        </li>
-        <!-- Boutton pour Portfolio -->
-        <li>
-          <a href="portfolio.html"><i class='bx bxs-book'></i> Portfolio</a>
-        </li>
-        <!-- Boutton pour Veille -->
-        <li>
-          <a href="veille.html"><i class='bx bx-archive'></i> Veille</a>
-        </li>
-        <!-- Boutton pour Stages -->
-        <li>
-          <a href="#"><i class='bx bx-user'></i> Stages</a>
-        </li>
-        <!-- Boutton pour Contact -->
-        <li>
-          <a href="contact.html"><i class='bx bx-phone'></i> Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- Bouton pour ouvrir le menu -->
-    <div class="bouton_menu">
-      <button class="trigger"><i class='bx bx-menu'></i></button>
-    </div>
-    <!-- Contenu de la page -->
-    <div class="container">
-      <!-- La fausse fenetre au milieu de l'ecran -->
-      <div class="fenetre">
-        <div class="haut_fenetre">
-          <!-- Faux boutton en haut a gauche de la fenetre -->
-          <div class="haut_fenetre_gauche">
-            <div class="screen-header-button close"></div>
-            <div class="screen-header-button maximize"></div>
-            <div class="screen-header-button minimize"></div>
-          </div>
-          <!-- Faux boutton en haut a droite de la fenetre -->
-          <div class="haut_fenetre_droit">
-            <div class="screen-header-ellipsis"></div>
-            <div class="screen-header-ellipsis"></div>
-            <div class="screen-header-ellipsis"></div>
-          </div>
-        </div>
-        <!-- Corps de l'onglet -->
-        <div class="fenetre-body">
-          <!-- Partie gauche de l'onglet -->
-          <div class="fenetre-body-item gauche">
-            <div class="texte_gauche">
-              <span>CONTACTEZ</span>
-              <span>MOI</span>
+  <body>
+    <!-- Menu -->
+    <div class="background">
+      <!-- Contenu du menu -->
+      <nav class="full-screen-nav">
+        <div class="backdrop"></div>
+        <ul>
+          <!-- Button pour Accueil -->
+          <li>
+            <a href="index.html" id="slide"
+              ><i class="bx bx-menu" id="icon"></i> Accueil</a
+            >
+          </li>
+          <!-- Button pour Portfolio -->
+          <li>
+            <a href="competences.html" id="slide"
+              ><i class="bx bxs-book" id="icon"></i> Compétences</a
+            >
+          </li>
+          <!-- Button pour Veille -->
+          <li>
+            <a href="waiting.html" id="slide"
+              ><i class="bx bx-archive" id="icon"></i> Veille</a
+            >
+          </li>
+          <!-- Button pour Stages -->
+          <li>
+            <a href="stages.html" id="slide"
+              ><i class="bx bx-user" id="icon"></i> Stages</a
+            >
+          </li>
+          <!-- Button pour Contact -->
+          <li>
+            <a href="contact.html" id="slide"
+              ><i class="bx bx-phone" id="icon"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Bouton pour ouvrir le menu -->
+      <div class="bouton_menu">
+        <button class="trigger"><i class="bx bx-menu"></i></button>
+      </div>
+      <!-- Contenu de la page -->
+      <div class="container">
+        <!-- Contact -->
+        <fieldset>
+          <legend>MON CONTACT</legend>
+          <div class="card">
+            <h5 class="titlecard">
+              <i class="bx bxs-contact" id="icon"></i>RESEAUX
+            </h5>
+            <hr class="line" />
+            <div class="link">
+              <a
+                class="linkedin"
+                target="_blank"
+                href="https://www.linkedin.com/in/antoine-sillard-073aa7227/"
+              >
+                <img
+                  src="img/linkdinlogo.png"
+                  alt="Logo LinkedIn"
+                  class="topcard"
+                />
+              </a>
+              <p>LinkedIn</p>
             </div>
-            
+            <div class="link">
+              <a class="cv" target="_blank" href="source/cv.pdf">
+                <img src="img/cvlogo.png" alt="Logo CV" class="topcard" />
+              </a>
+              <p>CV</p>
+            </div>
           </div>
-          <div class="containerlk">
-              <a  class="logolk" target="_blank" href="https://www.linkedin.com/in/antoine-sillard-073aa7227/"><img src="img/linkdinlogo.png" alt="Logo LinkedIn" class="imgcliquable"></a>
-              <a  class="logolk" target="_blank" href="source/cv.pdf"><img src="img/cvlogo.png" alt="Logo CV" class="imgcliquable"></a>
-          </div>
-          <!-- Partie droite de l'onglet -->
-          <div class="fenetre-body-item">
-            <form>
-              <div class="champs-form">
-                <!-- Champs numero 1 Nom -->
-                <div class="champs-form-groupe">
-                  <input class="champs-form-saisie" type="text" placeholder="NOM" />
-                </div>
-                <!-- Champs numero 2 Email -->
-                <div class="champs-form-groupe">
-                  <input class="champs-form-saisie" type="email" placeholder="EMAIL" />
-                </div>
-                <!-- Champs numero 3 Message -->
-                <div class="champs-form-groupe message">
-                  <input class="champs-form-saisie" type="text" placeholder="MESSAGE" />
-                </div>
-                <!-- Bouton pour envoyer ou annuler -->
-                <div class="champs-form-group buttons">
-                  <input class="champs-form-button" type="reset" value="ANNULER"></input>
-                  <input class="champs-form-button" type="submit" value="ENVOYER"></input>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+        </fieldset>
       </div>
     </div>
-  </div>
-  <!-- Declaration du script qui permet d'ouvrir le menu -->
-  <script src="script_portfolio.js"></script>
-</body>
-
+    <!-- Copyright -->
+    <div class="sub">
+      <i class="bx bx-copyright" id="logo"></i>Réalisé par Antoine SILLARD
+    </div>
+    <!-- Script pour le menu afin de ne plus voir le contenu quand on l'ouvre -->
+    <script src="script_portfolio.js"></script>
+  </body>
 </html>

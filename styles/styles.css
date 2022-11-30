@@ -1,6 +1,6 @@
 /* Import des polices d'écriture */
-@import url("https://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.cdnfonts.com/css/akira-expanded");
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
 
 * {
   margin: 0;
@@ -139,4 +139,54 @@ ul li a i {
 
 .nav_is_open {
   opacity: 0;
+}
+
+.sub {
+  font-size: 2em;
+  color: #f1f0ea;
+  position: absolute;
+  bottom: 2%;
+  font-family: 'SF Pro Display', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+[id^="icon"] {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  margin-right: 20px;
+}
+
+[id^="logo"] {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 2px;
+  margin-right: 5px;
+}
+
+#slide {
+  position: relative;
+  color: #F1F0EA;
+}
+
+#slide:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #F1F0EA;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#slide:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
